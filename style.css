@@ -191,11 +191,11 @@ h1, h2, h3, p { margin: 0; }
 .action-icon {
   display: grid;
   place-items: center;
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   color: var(--navy);
 }
-.action-icon svg { width: 28px; height: 28px; }
+.action-icon svg { width: 36px; height: 36px; }
 .action-card h2 {
   margin: 12px 0 8px;
   font-size: 18px;
