@@ -317,7 +317,7 @@ h1, h2, h3, p { margin: 0; }
 .why-photo {
   position: absolute;
   inset: 0 0 0 50%;
-  background: url("images/advisor.jpg") 20% center / cover no-repeat;
+  background: url("images/advisor.jpg") 42% center / cover no-repeat;
 }
 .why-photo::after {
   content: "";
@@ -357,8 +357,8 @@ h1, h2, h3, p { margin: 0; }
   max-width: 260px;
   justify-self: end;
 }
-.why-quote p { font-size: 16px; line-height: 1.4; font-weight: 600; }
-.why-quote footer { margin-top: 8px; font-size: 13px; color: rgba(255, 255, 255, 0.8); }
+.why-quote p { font-size: 16px; line-height: 1.4; font-weight: 600; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55); }
+.why-quote footer { margin-top: 8px; font-size: 13px; color: rgba(255, 255, 255, 0.8); text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 .stars { color: var(--star); letter-spacing: 2px; font-size: 14px; }
 
 .reviews { padding: 56px 0 28px; }
@@ -403,7 +403,7 @@ h1, h2, h3, p { margin: 0; }
   padding: 28px;
   background:
     linear-gradient(90deg, rgba(7, 24, 48, 0.72), rgba(7, 24, 48, 0.18) 58%, rgba(7, 24, 48, 0.05)),
-    url("images/dealership.jpg") center / cover no-repeat;
+    url("images/dealership.jpg") center 58% / cover no-repeat;
   color: #fff;
 }
 .dealer-photo h2 { font-size: 28px; letter-spacing: -0.03em; }
@@ -478,9 +478,16 @@ h1, h2, h3, p { margin: 0; }
   .wrap { width: min(var(--max), calc(100% - 28px)); }
   .label-desktop { display: none; }
   .label-mobile { display: inline; }
-  .hero { min-height: 430px; align-items: flex-end; background-position: 68% center; }
-  .hero-copy { padding: 28px 0 36px; }
-  .hero h1 { font-size: 38px; }
+  .hero {
+    min-height: 430px;
+    align-items: flex-end;
+    background:
+      linear-gradient(180deg, rgba(246, 194, 140, 0) 118px, rgba(246, 186, 128, 0.72) 168px, #f6c28c 208px),
+      url("images/hero.jpg") center top / 100% auto no-repeat;
+    background-color: #f6c28c;
+  }
+  .hero-copy { padding: 208px 0 22px; max-width: none; }
+  .hero h1 { font-size: 34px; }
   .hero-promise { font-size: 18px; }
   .hero-text { display: none; }
   .actions-desktop { display: none; }
