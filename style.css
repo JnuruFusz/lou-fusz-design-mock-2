@@ -291,11 +291,21 @@ h1, h2, h3, p { margin: 0; }
   font-size: 15px;
   line-height: 1.45;
 }
-.brand-wall {
+.brand-wall { display: grid; gap: 18px; }
+.brand-row {
+  display: grid;
+  gap: 14px 10px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.brand-row.six { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.brand-row.seven { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.brand-row img {
   width: 100%;
-  height: auto;
+  height: 58px;
   object-fit: contain;
-  background: #fff;
 }
 
 .why {
@@ -499,6 +509,8 @@ h1, h2, h3, p { margin: 0; }
   .brands-grid { grid-template-columns: 1fr; gap: 8px; }
   .brands-copy .eyebrow, .brands-copy p, .brands-copy .btn { display: none; }
   .brands-copy h2 { font-size: 26px; text-align: center; }
+  .brand-row.six, .brand-row.seven { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .brand-row img { height: 46px; }
   .why-points { grid-template-columns: 1fr 1fr; }
   .why h2, .reviews h2, .dealer-photo h2 { font-size: 28px; }
   .review-grid { grid-template-columns: 1fr; }
